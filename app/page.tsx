@@ -24,8 +24,8 @@ export default function Home() {
                 </h1>
               </div>
               <p className="text-lg text-muted leading-relaxed max-w-lg">
-                I build engaging learning experiences that empower individuals
-                and meet business goals.
+                I design learning experiences that don&apos;t just inform — they
+                engage, empower, and drive meaningful results.
               </p>
               <Link
                 href="/contact"
@@ -89,14 +89,14 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold leading-snug">
                 A scenario-based
                 <br />
-                <span className="text-accent">e-learning experience</span>{" "}
-                designed to bolster employee engagement
+                <span className="text-accent">eLearning experience</span>{" "}
+                designed to help managers handle workplace conduct issues
+                effectively
               </h2>
               <p className="text-muted leading-relaxed">
-                This concept project was created to teach managers how to foster
-                a culture of employee engagement and value positively. It uses
-                real-world scenarios, interactive decision points, and reflective
-                assessments.
+                Using real-world scenarios, interactive decisions, and
+                reflection, this project focuses on building a culture of
+                respect while protecting the organization.
               </p>
               <Link
                 href="/featuredproject"

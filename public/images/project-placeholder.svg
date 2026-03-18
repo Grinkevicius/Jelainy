@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#e8e0f6"/>
-  <text x="400" y="250" text-anchor="middle" fill="#7c5cbf" font-family="system-ui" font-size="18">Project Image</text>
+  <rect width="800" height="500" fill="#dde9fa"/>
+  <text x="400" y="250" text-anchor="middle" fill="#4a8fe7" font-family="system-ui" font-size="18">Project Image</text>
 </svg>

@@ -1,65 +1,234 @@
 import Image from "next/image";
+import Link from "next/link";
+import TestimonialCarousel from "./components/TestimonialCarousel";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* ──── HERO SECTION ──── */}
+      <section className="relative overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left – Copy */}
+            <div className="space-y-8 animate-fade-in-up">
+              <div>
+                <p className="text-accent font-medium text-sm tracking-widest uppercase mb-3">
+                  Learning Experience Designer
+                </p>
+                <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight">
+                  Hi, I&apos;m{" "}
+                  <span className="scribble-underline text-accent">
+                    Jelainy
+                  </span>
+                  !
+                </h1>
+              </div>
+              <p className="text-lg text-muted leading-relaxed max-w-lg">
+                I build engaging learning experiences that empower individuals
+                and meet business goals.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent-dark transition-colors shadow-lg shadow-accent/20"
+              >
+                Let&apos;s Connect
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Right – Hero Image */}
+            <div className="relative animate-scale-in animation-delay-200">
+              <div className="relative w-full aspect-[5/6] rounded-3xl overflow-hidden shadow-2xl shadow-accent/10">
+                <Image
+                  src="/images/hero-placeholder.svg"
+                  alt="Jelainy – Learning Experience Designer"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              {/* Decorative blob */}
+              <div className="absolute -z-10 -top-8 -right-8 w-64 h-64 bg-accent-light rounded-full blur-3xl opacity-60" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ──── FEATURED PROJECT ──── */}
+      <section className="bg-section-alt">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <p className="text-accent font-medium text-sm tracking-widest uppercase mb-3 text-center">
+            Featured Project
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-8">
+            {/* Project Image */}
+            <div className="relative rounded-2xl overflow-hidden shadow-xl card-hover">
+              <Image
+                src="/images/project-placeholder.svg"
+                alt="A scenario-based e-learning experience"
+                width={800}
+                height={500}
+                className="w-full h-auto"
+              />
+            </div>
+
+            {/* Project Info */}
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold leading-snug">
+                A scenario-based
+                <br />
+                <span className="text-accent">e-learning experience</span>{" "}
+                designed to bolster employee engagement
+              </h2>
+              <p className="text-muted leading-relaxed">
+                This concept project was created to teach managers how to foster
+                a culture of employee engagement and value positively. It uses
+                real-world scenarios, interactive decision points, and reflective
+                assessments.
+              </p>
+              <Link
+                href="/featuredproject"
+                className="inline-flex items-center gap-2 border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-white transition-all"
+              >
+                Get The Details
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      {/* ──── TESTIMONIALS ──── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16">
+            What People Are{" "}
+            <span className="scribble-underline">Saying</span>
+          </h2>
+          <TestimonialCarousel />
+        </div>
+      </section>
+
+      {/* ──── ABOUT ME ──── */}
+      <section className="bg-section-alt">
+        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* About Copy */}
+            <div className="space-y-6 order-2 md:order-1">
+              <p className="text-accent font-medium text-sm tracking-widest uppercase">
+                A Little About Me
+              </p>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold leading-snug">
+                Lifelong learner, dreamer, and problem-solver.
+              </h2>
+              <p className="text-muted leading-relaxed">
+                Hi, I&apos;m Jelainy, a lifelong learner, dreamer, and
+                problem-solver. I&apos;ve spent years honing my skills in
+                analysis, design, development, instruction, evaluation, and
+                presentation — all to facilitate growth.
+              </p>
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all"
+              >
+                Read On
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            {/* About Image */}
+            <div className="relative order-1 md:order-2">
+              <div className="relative w-full aspect-[5/6] rounded-3xl overflow-hidden shadow-xl">
+                <Image
+                  src="/images/about-placeholder.svg"
+                  alt="About Jelainy"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute -z-10 -bottom-8 -left-8 w-48 h-48 bg-accent-light rounded-full blur-3xl opacity-50" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ──── CTA SECTION ──── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-3xl mx-auto px-6 text-center space-y-8">
+          {/* Decorative scribble */}
+          <svg
+            className="mx-auto w-48 h-6 text-accent opacity-50"
+            viewBox="0 0 200 12"
+            fill="none"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+            <path
+              d="M2 8 Q 50 2, 100 8 T 198 8"
+              stroke="currentColor"
+              strokeWidth="3"
+              strokeLinecap="round"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          </svg>
+          <h2 className="text-3xl md:text-5xl font-serif font-bold leading-tight">
+            Let&apos;s make meaningful learning experiences{" "}
+            <span className="text-accent">together</span>.
+          </h2>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-accent text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-accent-dark transition-colors shadow-lg shadow-accent/20"
           >
-            Documentation
-          </a>
+            Get In Touch
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }

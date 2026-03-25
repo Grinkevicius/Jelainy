@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -17,8 +18,15 @@ export default function Navbar() {
     <header className="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur-md border-b border-accent/10">
       <nav className="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-serif font-bold text-heading">
-          Jelainy
+        <Link href="/">
+          <Image
+            src="/jelayny_text_only.png"
+            alt="Jelainy"
+            height={48}
+            width={160}
+            className="object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop links */}

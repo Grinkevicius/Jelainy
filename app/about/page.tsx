@@ -9,40 +9,34 @@ export const metadata: Metadata = {
 };
 
 const skills = [
-  { name: "Instructional Design", icon: "📐" },
-  { name: "E-Learning Development", icon: "💻" },
+  { name: "Learning Experience Design", icon: "💡" },
+  { name: "eLearning Development", icon: "🖥️" },
   { name: "Curriculum Design", icon: "📚" },
-  { name: "Needs Analysis", icon: "🔍" },
-  { name: "Storyboarding", icon: "🎬" },
-  { name: "Visual Design", icon: "🎨" },
+  { name: "Facilitation & Training Delivery", icon: "🎤" },
+  { name: "Stakeholder Collaboration", icon: "🤝" },
+  { name: "Data-Informed Improvement", icon: "📈" },
+  { name: "Program & Project Management", icon: "🗓️" },
   { name: "LMS Administration", icon: "⚙️" },
-  { name: "Project Management", icon: "📋" },
 ];
 
 const timeline = [
   {
-    year: "2024",
-    title: "Senior Learning Experience Designer",
+    year: "2024 – Present",
+    title: "Instructional Designer & Team Lead",
     description:
-      "Leading end-to-end design of enterprise learning programs, mentoring junior designers, and driving adoption of learner-centered methodologies.",
+      "Designed and implemented performance-driven learning programs aligned with organizational goals, using data-informed needs analysis and stakeholder collaboration to address performance gaps. Developed and facilitated blended learning experiences and professional development that improved engagement and instructional effectiveness.",
   },
   {
-    year: "2022",
-    title: "Learning Experience Designer",
+    year: "2017 – 2024",
+    title: "Teacher & Team Leader",
     description:
-      "Designed scenario-based e-learning modules, conducted needs analyses, and collaborated with SMEs to create impactful training solutions.",
+      "Designed curriculum and learning experiences using backward design principles, creating aligned objectives, assessments, and blended learning materials. Led professional development initiatives and collaborated with stakeholders to improve performance outcomes and support continuous growth.",
   },
   {
-    year: "2020",
-    title: "Instructional Designer",
+    year: "2015 – 2017",
+    title: "Teacher",
     description:
-      "Developed instructor-led and blended learning programs, created assessments, and managed LMS content for a global workforce.",
-  },
-  {
-    year: "2018",
-    title: "Training Coordinator",
-    description:
-      "Coordinated training logistics, gathered learner feedback, and supported the design team with content development.",
+      "Developed standards-aligned instruction using data-driven strategies, creating assessments and learning materials to measure and improve learner performance. Collaborated with cross-functional teams to align curriculum and instructional practices.",
   },
 ];
 
@@ -58,22 +52,24 @@ export default function AboutPage() {
                 About Me
               </p>
               <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
-                Lifelong learner, dreamer, and{" "}
+                Curious, creative, and always looking for ways to{" "}
                 <span className="scribble-underline text-accent">
-                  problem-solver
+                  learn and grow
                 </span>
                 .
               </h1>
               <p className="text-lg text-muted leading-relaxed max-w-lg">
-                I&apos;m Jelainy — a Learning Experience Designer who believes
-                that great learning starts with empathy. I&apos;ve spent years
-                honing my skills in analysis, design, development, instruction,
-                evaluation, and presentation — all to facilitate growth.
+                Hi, I&apos;m Jelainy. I design learning experiences with a
+                creative, performance-driven mindset, creating solutions that
+                engage learners and drive real-world results. I&apos;m passionate
+                about building learning that is relevant, interactive, and
+                purposeful, helping people connect with content and apply it
+                confidently in real-world situations.
               </p>
               <p className="text-muted leading-relaxed max-w-lg">
-                When I&apos;m not designing learning experiences, you can find me
-                exploring new ideas, diving into a good book, or dreaming up my
-                next creative project.
+                When I&apos;m not designing, I&apos;m usually enjoying a cup of
+                cafecito, reading a good book, or experimenting with new recipes
+                in the kitchen.
               </p>
             </div>
 
@@ -101,14 +97,15 @@ export default function AboutPage() {
               My Approach
             </p>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-snug">
-              Design with <span className="text-accent">empathy</span>, build
-              with purpose
+              Thoughtful design.{" "}
+              <span className="text-accent">Meaningful learning.</span>
             </h2>
             <p className="text-muted leading-relaxed">
-              I believe every learning experience should be meaningful,
-              accessible, and engaging. My process combines learner-centered
-              design thinking with proven instructional frameworks like ADDIE and
-              SAM to create experiences that truly stick.
+              I believe the best learning experiences are engaging, relevant, and
+              built with purpose. By combining creative thinking with strong
+              instructional design foundations, using frameworks like ADDIE and
+              SAM, I create learning that connects with people and makes a
+              lasting impact.
             </p>
           </div>
 
@@ -116,17 +113,17 @@ export default function AboutPage() {
             {[
               {
                 title: "Analyze",
-                desc: "Understanding learner needs, business goals, and performance gaps through thorough research and stakeholder interviews.",
+                desc: "I start by understanding the people behind the learning, their needs, the goals of the organization, and the performance gaps that matter most. This ensures that every solution has a purpose and is relevant.",
                 icon: "🔍",
               },
               {
                 title: "Design & Develop",
-                desc: "Crafting storyboards, prototypes, and fully interactive e-learning modules using modern authoring tools.",
+                desc: "I take insights and turn them into compelling, interactive learning experiences. With a passion for creativity and practical application, I develop learning solutions that are clear, relevant, and designed for performance.",
                 icon: "✏️",
               },
               {
-                title: "Evaluate & Iterate",
-                desc: "Measuring impact through assessments, feedback, and analytics — then refining for continuous improvement.",
+                title: "Iterate & Evaluate",
+                desc: "I continually monitor the performance of learning and improve it over time. This ensures that every learning experience remains relevant and connected to the real world, meeting the ever-changing needs of people and performance gaps in the organization.",
                 icon: "📊",
               },
             ].map((step) => (
@@ -220,8 +217,9 @@ export default function AboutPage() {
             Want to work <span className="text-accent">together</span>?
           </h2>
           <p className="text-muted leading-relaxed">
-            I&apos;m always open to new opportunities and collaborations. Let&apos;s
-            chat about how I can help bring your learning vision to life.
+            I&apos;m always open to new opportunities and collaborations.
+            Let&apos;s connect and explore how we can create meaningful,
+            impactful learning experiences together.
           </p>
           <Link
             href="/contact"

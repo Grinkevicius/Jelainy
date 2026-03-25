@@ -1,12 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import type { FormEvent } from "react";
-
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     // TODO: wire up to an API route or email service
     setSubmitted(true);
@@ -159,7 +157,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-muted text-sm">hello@jelainy.com</p>
+                    <a href="mailto:hello@jelainy.com" className="text-muted text-sm hover:text-accent transition-colors">hello@jelainy.com</a>
                   </div>
                 </div>
 
@@ -176,7 +174,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">LinkedIn</p>
-                    <p className="text-muted text-sm">linkedin.com/in/jelainy</p>
+                    <a href="https://linkedin.com/in/jelainy" target="_blank" rel="noopener noreferrer" className="text-muted text-sm hover:text-accent transition-colors">linkedin.com/in/jelainy</a>
                   </div>
                 </div>
 

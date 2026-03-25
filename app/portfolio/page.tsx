@@ -70,12 +70,13 @@ export default function PortfolioPage() {
           </p>
           <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight animate-fade-in-up">
             Designing learning that{" "}
-            <span className="scribble-underline text-accent">matters</span>
+            <span className="scribble-underline text-accent">makes an impact</span>
+            .
           </h1>
           <p className="mt-6 text-lg text-muted leading-relaxed max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
-            Each project is an opportunity to solve real problems, engage
-            learners, and drive measurable outcomes. Here&apos;s a selection of my
-            work.
+            Every project is a chance to create meaningful, engaging experiences
+            that solve real problems and support lasting growth. Here&apos;s a
+            look at some of my work.
           </p>
         </div>
       </section>

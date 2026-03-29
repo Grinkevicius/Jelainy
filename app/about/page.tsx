@@ -122,7 +122,7 @@ export default function AboutPage() {
               },
               {
                 title: "Iterate & Evaluate",
-                desc: "I continually monitor the performance of learning and improve it over time. This ensures that every learning experience remains relevant and connected to the real world, meeting the ever-changing needs of people and performance gaps in the organization.",
+                desc: "I continually monitor the performance of learning and improve it over time. This ensures that every learning experience remains relevant and connected to the real world, meeting the ever changing needs of people and performance gaps in the organization.",
                 icon: "📊",
               },
             ].map((step) => (

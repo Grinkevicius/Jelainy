@@ -4,8 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About | Jelainy",
-  description:
-    "Learn more about Jelainy — a lifelong learner, dreamer, and problem-solver passionate about learning experience design.",
+  description: "Learn more about Jelainy a lifelong learner, dreamer, and problem solver passionate about learning experience design.",
 };
 
 const skills = [
@@ -24,7 +23,7 @@ const timeline = [
     year: "2024 – Present",
     title: "Instructional Designer & Team Lead",
     description:
-      "Designed and implemented performance-driven learning programs aligned with organizational goals, using data-informed needs analysis and stakeholder collaboration to address performance gaps. Developed and facilitated blended learning experiences and professional development that improved engagement and instructional effectiveness.",
+      "Designed and implemented performance driven learning programs aligned with organizational goals, using data informed needs analysis and stakeholder collaboration to address performance gaps. Developed and facilitated blended learning experiences and professional development that improved engagement and instructional effectiveness.",
   },
   {
     year: "2017 – 2024",
@@ -36,7 +35,7 @@ const timeline = [
     year: "2015 – 2017",
     title: "Teacher",
     description:
-      "Developed standards-aligned instruction using data-driven strategies, creating assessments and learning materials to measure and improve learner performance. Collaborated with cross-functional teams to align curriculum and instructional practices.",
+      "Developed standards aligned instruction using data driven strategies, creating assessments and learning materials to measure and improve learner performance. Collaborated with cross functional teams to align curriculum and instructional practices.",
   },
 ];
 
@@ -46,7 +45,7 @@ export default function AboutPage() {
       {/* ──── HERO ──── */}
       <section className="relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_0.65fr] gap-12 items-center">
             <div className="space-y-6 animate-fade-in-up">
               <p className="text-accent font-medium text-sm tracking-widest uppercase">
                 About Me
@@ -60,13 +59,13 @@ export default function AboutPage() {
               </h1>
               <p className="text-lg text-muted leading-relaxed max-w-lg">
                 Hi, I&apos;m Jelainy. I design learning experiences with a
-                creative, performance-driven mindset, creating solutions that
-                engage learners and drive real-world results. I&apos;m passionate
+                creative, performance driven mindset, creating solutions that
+                engage learners and drive real world results. I&apos;m passionate
                 about building learning that is relevant, interactive, and
                 purposeful, helping people connect with content and apply it
-                confidently in real-world situations.
+                confidently in real world situations.
               </p>
-              <p className="text-muted leading-relaxed max-w-lg">
+              <p className="text-lg text-muted leading-relaxed max-w-lg">
                 When I&apos;m not designing, I&apos;m usually enjoying a cup of
                 cafecito, reading a good book, or experimenting with new recipes
                 in the kitchen.

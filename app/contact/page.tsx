@@ -45,7 +45,7 @@ export default function ContactPage() {
           </p>
           <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight animate-fade-in-up">
             Let&apos;s create something{" "}
-            <span className="scribble-underline text-accent">together</span>
+            <span className="scribble-underline text-accent">together!</span>
           </h1>
           <p className="mt-6 text-lg text-muted leading-relaxed max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
             Have a project in mind, a question, or just want to say hello?
@@ -186,7 +186,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
-                    <a href="mailto:hello@jelainy.com" className="text-muted text-sm hover:text-accent transition-colors">hello@jelainy.com</a>
+                    <a href="mailto:Jelainyrg@gmail.com" className="text-muted text-sm hover:text-accent transition-colors">Jelainyrg@gmail.com</a>
                   </div>
                 </div>
 
@@ -241,7 +241,7 @@ export default function ContactPage() {
                 <p className="text-sm text-foreground leading-relaxed">
                   💡 <span className="font-semibold">Quick note:</span> I
                   typically respond within 24–48 hours. For urgent inquiries,
-                  feel free to connect with me on LinkedIn.
+                  feel free to connect with me on <a href="https://linkedin.com/in/jelainy" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:text-accent-dark transition-colors">LinkedIn</a>.
                 </p>
               </div>
             </div>

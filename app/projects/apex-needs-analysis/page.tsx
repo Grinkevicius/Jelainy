@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "APEX Needs Analysis | Jelainy",
   description:
-    "A performance analysis identifying root causes of service inconsistencies and recommending targeted, non-training solutions.",
+    "A performance analysis identifying root causes of service inconsistencies and recommending targeted, non training solutions.",
 };
 
 export default function ApexNeedsAnalysisPage() {
@@ -19,10 +19,10 @@ export default function ApexNeedsAnalysisPage() {
               Portfolio Project
             </p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight animate-fade-in-up">
+              APEX{" "}
               <span className="scribble-underline text-accent">
-                APEX
-              </span>{" "}
-              Needs Analysis
+                Needs Analysis
+              </span>
             </h1>
             <p className="mt-6 text-lg text-muted leading-relaxed animate-fade-in-up animation-delay-200">
               A performance consulting project identifying the root causes of
@@ -40,7 +40,7 @@ export default function ApexNeedsAnalysisPage() {
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageLightbox
                 src="/articulate/apex/1.png"
-                alt="APEX Needs Analysis – Page 1"
+                alt="APEX Needs Analysis Page 1"
                 width={1545}
                 height={2000}
                 priority
@@ -49,7 +49,7 @@ export default function ApexNeedsAnalysisPage() {
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <ImageLightbox
                 src="/articulate/apex/2.png"
-                alt="APEX Needs Analysis – Page 2"
+                alt="APEX Needs Analysis Page 2"
                 width={1545}
                 height={1999}
               />
@@ -70,7 +70,7 @@ export default function ApexNeedsAnalysisPage() {
                   label: "Role",
                   value: "Learning Experience Designer / Performance Consultant",
                 },
-                { label: "Timeline", value: "1–2 Weeks" },
+                { label: "Timeline", value: "1 to 2 Weeks" },
                 { label: "Tools", value: "Canva" },
                 { label: "Type", value: "Concept Project" },
               ].map((item) => (
@@ -103,7 +103,7 @@ export default function ApexNeedsAnalysisPage() {
                 <p className="text-muted leading-relaxed">
                   The initial request was to develop a training program to address
                   these inconsistencies. However, further analysis revealed that
-                  environmental and system factors — along with knowledge gaps —
+                  environmental and system factors, along with knowledge gaps,
                   contributed to the inconsistencies.
                 </p>
               </div>
@@ -119,9 +119,9 @@ export default function ApexNeedsAnalysisPage() {
                   recommendations to resolve the issues.
                 </p>
                 <p className="text-muted leading-relaxed">
-                  Rather than implementing a training-first approach, the final
+                  Rather than implementing a training first approach, the final
                   recommendations focused on performance environment and support
-                  systems — including a redesign of the knowledge base, a
+                  systems, including a redesign of the knowledge base, a
                   performance support tool, and targeted practice opportunities.
                   These solutions would enable employees to make quick and accurate
                   decisions when interacting with clients.
@@ -138,12 +138,12 @@ export default function ApexNeedsAnalysisPage() {
                     {
                       step: "01",
                       title: "Analysis & Discovery",
-                      desc: "Conducted stakeholder consultation and reviewed available performance data to identify gaps in service consistency. Differentiated between skill-based issues and environmental or system constraints.",
+                      desc: "Conducted stakeholder consultation and reviewed available performance data to identify gaps in service consistency. Differentiated between skill based issues and environmental or system constraints.",
                     },
                     {
                       step: "02",
                       title: "Root Cause Analysis",
-                      desc: "Identified three primary contributing factors: skill gaps in handling complex client scenarios, environmental pressures (high call volume, time constraints), and ineffective systems (outdated and difficult-to-navigate knowledge base).",
+                      desc: "Identified three primary contributing factors: skill gaps in handling complex client scenarios, environmental pressures (high call volume, time constraints), and ineffective systems (outdated and difficult to navigate knowledge base).",
                     },
                     {
                       step: "03",
@@ -153,7 +153,7 @@ export default function ApexNeedsAnalysisPage() {
                     {
                       step: "04",
                       title: "Visual Case Development",
-                      desc: "Created a visually structured consulting case using Canva to communicate findings, recommendations, and expected impact in a clear and stakeholder-friendly format.",
+                      desc: "Created a visually structured consulting case using Canva to communicate findings, recommendations, and expected impact in a clear and stakeholder friendly format.",
                     },
                   ].map((item) => (
                     <div
@@ -186,7 +186,7 @@ export default function ApexNeedsAnalysisPage() {
                     "Demonstrated ability to diagnose performance issues beyond training requests",
                     "Applied a performance consulting approach aligned with real business needs",
                     "Designed a clear, visually engaging case study for stakeholder communication",
-                    "Incorporated data-informed thinking and evaluation strategies",
+                    "Incorporated data informed thinking and evaluation strategies",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <span className="mt-1.5 w-2 h-2 rounded-full bg-accent shrink-0" />
@@ -195,9 +195,9 @@ export default function ApexNeedsAnalysisPage() {
                   ))}
                 </ul>
                 <p className="text-muted leading-relaxed">
-                  By using an ADDIE-informed approach, this project challenged me
+                  By using an ADDIE informed approach, this project challenged me
                   to think beyond training requests and focus on what may be
-                  impacting learner performance in real-world situations. Through
+                  impacting learner performance in real world situations. Through
                   this process, I was able to determine the inhibiting factors and
                   make more effective recommendations.
                 </p>
@@ -211,7 +211,7 @@ export default function ApexNeedsAnalysisPage() {
       <section className="bg-section-alt">
         <div className="max-w-3xl mx-auto px-6 py-20 md:py-28 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
-            Want to see more <span className="text-accent">projects</span>?
+            Want to see more <span className="scribble-underline text-accent">projects</span>?
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

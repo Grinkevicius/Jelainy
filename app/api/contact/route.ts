@@ -20,51 +20,52 @@ export async function POST(request: Request) {
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /></head>
-<body style="margin:0;padding:0;background:#f5f5f5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f5;padding:32px 0;">
+<body style="margin:0;padding:0;background:#f0f2f5;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f0f2f5;padding:40px 16px;">
     <tr>
       <td align="center">
-        <table width="520" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.07);">
+        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;">
 
-          <!-- Header -->
+          <!-- Header bar -->
           <tr>
-            <td style="background:linear-gradient(135deg,#4a8fe7 0%,#7b6fc4 100%);padding:24px 32px;">
-              <p style="margin:0;color:#ffffff;font-size:13px;font-weight:600;">✉️ &nbsp;New contact request · jelainy.com</p>
+            <td style="background:linear-gradient(135deg,#4a8fe7,#7b6fc4);border-radius:12px 12px 0 0;padding:20px 28px;">
+              <p style="margin:0;color:rgba(255,255,255,0.9);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:700;">New Contact Request</p>
+              <p style="margin:4px 0 0;color:rgba(255,255,255,0.65);font-size:12px;">jelainy.com</p>
             </td>
           </tr>
 
-          <!-- Body -->
+          <!-- Card -->
           <tr>
-            <td style="padding:28px 32px;">
+            <td style="background:#ffffff;border-radius:0 0 12px 12px;padding:28px;">
 
-              <!-- Sender -->
-              <p style="margin:0 0 4px;font-size:17px;font-weight:700;color:#1a1a2e;">${name}</p>
-              <p style="margin:0 0 20px;font-size:13px;color:#6b7280;">${email}${subject ? ` &nbsp;·&nbsp; ${subject}` : ""}</p>
-
-              <!-- Divider -->
-              <hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 20px;" />
-
-              <!-- Message -->
-              <p style="margin:0;font-size:15px;line-height:1.7;color:#374151;white-space:pre-wrap;">${message}</p>
-
-              <!-- Reply CTA -->
-              <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:28px;">
+              <!-- Sender row -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
                 <tr>
-                  <td>
-                    <a href="mailto:${email}" style="display:inline-block;background:linear-gradient(135deg,#4a8fe7 0%,#7b6fc4 100%);color:#ffffff;font-size:13px;font-weight:600;text-decoration:none;padding:11px 26px;border-radius:50px;">
-                      Reply to ${name}
-                    </a>
+                  <td style="width:44px;vertical-align:top;">
+                    <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#4a8fe7,#7b6fc4);text-align:center;line-height:40px;color:#fff;font-size:16px;font-weight:700;">${name.charAt(0).toUpperCase()}</div>
+                  </td>
+                  <td style="padding-left:12px;vertical-align:top;">
+                    <p style="margin:0;font-size:15px;font-weight:700;color:#111827;">${name}</p>
+                    <p style="margin:2px 0 0;font-size:13px;color:#6b7280;">${email}</p>
                   </td>
                 </tr>
               </table>
+
+              ${subject ? `<p style="margin:0 0 16px;font-size:13px;font-weight:600;color:#4a8fe7;background:#f0f5ff;display:inline-block;padding:4px 12px;border-radius:20px;">${subject}</p><br/>` : ""}
+
+              <!-- Message -->
+              <p style="margin:0 0 24px;font-size:14px;line-height:1.75;color:#374151;white-space:pre-wrap;">${message}</p>
+
+              <!-- Reply button -->
+              <a href="mailto:${email}" style="display:inline-block;background:linear-gradient(135deg,#4a8fe7,#7b6fc4);color:#ffffff;font-size:13px;font-weight:600;text-decoration:none;padding:10px 24px;border-radius:50px;">Reply to ${name}</a>
 
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td style="padding:14px 32px;border-top:1px solid #f0f0f0;text-align:center;">
-              <p style="margin:0;font-size:11px;color:#9ca3af;">jelainy.com contact form</p>
+            <td style="padding:16px 4px 0;text-align:center;">
+              <p style="margin:0;font-size:11px;color:#9ca3af;">jelainy.com &nbsp;·&nbsp; made by <a href="https://grinkt.com" style="color:#9ca3af;text-decoration:underline;">grinkt.com</a></p>
             </td>
           </tr>
 

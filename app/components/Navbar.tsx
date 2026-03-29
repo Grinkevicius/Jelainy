@@ -16,14 +16,14 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur-md border-b border-accent/10">
-      <nav className="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-6 h-[84px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/image2.png"
+            src="/logo8.png"
             alt="Jelainy"
-            height={64}
-            width={210}
+            height={72}
+            width={220}
             className="object-contain"
             priority
           />

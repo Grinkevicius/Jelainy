@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+import ArticulateEmbed from "../components/ArticulateEmbed";
+import ImageLightbox from "../components/ImageLightbox";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -34,19 +35,13 @@ export default function FeaturedProjectPage() {
         </div>
       </section>
 
-      {/* ──── PROJECT IMAGE ──── */}
+      {/* ──── ARTICULATE PROJECT ──── */}
       <section className="bg-section-alt">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/project-placeholder.svg"
-              alt="Gray Areas E-Learning Project"
-              width={1200}
-              height={600}
-              className="w-full h-auto"
-              priority
-            />
-          </div>
+          <ArticulateEmbed
+            src="/articulate/grayareas/story.html"
+            title="Gray Areas – Navigating Workplace Conduct"
+          />
         </div>
       </section>
 
@@ -159,7 +154,7 @@ export default function FeaturedProjectPage() {
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <span className="mt-1.5 w-2 h-2 rounded-full bg-accent shrink-0" />
-                      <span className="text-muted leading-relaxed text-sm">
+                      <span className="text-muted leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -178,39 +173,54 @@ export default function FeaturedProjectPage() {
                       step: "01",
                       title: "Action Mapping",
                       desc: "I began by identifying the core performance problem and mapping out realistic workplace scenarios where managers must make decisions. I then explored the potential consequences, focusing on their impact on psychological safety, organizational risk, and team dynamics. From there, I identified the key behaviors that managers need to practice, ensuring that each interaction reinforces effective decision-making in ambiguous, real-world situations.",
+                      image: "/articulate/grayareas/images/action mapping.png",
                     },
                     {
                       step: "02",
                       title: "Text-Based Storyboard",
                       desc: 'After identifying the key decision points, I created a detailed storyboard to map out the learner experience. I wrote each scenario using natural, conversational dialogue to reflect realistic workplace interactions. At each decision point, learners choose how to respond and experience the consequences as the scenario unfolds. I also incorporated a "Manager Toolkit" that provides optional guidance, allowing learners to access support as needed while still encouraging independent decision-making.',
+                      image: "/articulate/grayareas/images/story board.png",
                     },
                     {
                       step: "03",
                       title: "Visual Mockups",
                       desc: "Using Canva, I developed the overall layout, style guide, and background mockups to establish a cohesive visual direction. I then implemented the interface in Articulate Storyline with a custom layout that feels more like a workplace environment than a traditional eLearning course — including a manager dashboard, progress indicators, and a persistent Manager Toolkit.",
+                      image: "/articulate/grayareas/images/visual mockups.png",
                     },
                     {
                       step: "04",
                       title: "Prototyping",
                       desc: "I developed an interactive prototype to test the flow, functionality, and overall user experience — building core interactions including branching decision points, variable-driven progress indicators, and layered feedback. Throughout prototyping, I tested the experience to refine navigation, improve pacing, and ensure a smooth and intuitive user experience.",
+                      image: "/articulate/grayareas/images/prototyping.png",
                     },
                     {
                       step: "05",
                       title: "Development",
                       desc: "After incorporating feedback from the interactive prototype, I moved into full development in Articulate Storyline. I refined the interactions, finalized visual elements, and ensured all variables, triggers, and branching logic functioned as intended — polishing transitions and pacing to create a seamless and engaging learner experience.",
+                      image: null,
                     },
                   ].map((item) => (
                     <div
                       key={item.step}
                       className="bg-section-alt rounded-xl p-6 space-y-3"
                     >
-                      <span className="text-3xl font-serif font-bold text-accent/30">
-                        {item.step}
-                      </span>
-                      <h3 className="font-serif font-bold">{item.title}</h3>
+                      <div className="flex items-baseline gap-3 mb-2">
+                        <span className="text-2xl font-serif font-bold text-accent/30">{item.step}</span>
+                        <h3 className="font-serif font-bold">{item.title}</h3>
+                      </div>
                       <p className="text-muted text-sm leading-relaxed">
                         {item.desc}
                       </p>
+                      {item.image && (
+                        <div className="mt-4 rounded-lg overflow-hidden border border-accent/10">
+                          <ImageLightbox
+                            src={item.image}
+                            alt={item.title}
+                            width={1200}
+                            height={800}
+                          />
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>

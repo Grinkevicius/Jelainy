@@ -76,7 +76,7 @@ export default function AboutPage() {
             <div className="relative animate-scale-in animation-delay-200">
               <div className="relative w-full aspect-[5/6] rounded-3xl overflow-hidden shadow-2xl shadow-accent/10">
                 <Image
-                  src="/images/about-placeholder.svg"
+                  src="/family.jpeg"
                   alt="About Jelainy"
                   fill
                   className="object-cover"

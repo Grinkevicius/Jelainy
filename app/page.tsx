@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import TestimonialCarousel from "./components/TestimonialCarousel";
+
 
 export default function Home() {
   return (
@@ -52,7 +52,7 @@ export default function Home() {
             <div className="relative animate-scale-in animation-delay-200">
               <div className="relative w-full aspect-[5/6] rounded-3xl overflow-hidden shadow-2xl shadow-accent/10">
                 <Image
-                  src="/images/hero-placeholder.svg"
+                  src="/jelainy.png"
                   alt="Jelainy – Learning Experience Designer"
                   fill
                   className="object-cover"
@@ -69,23 +69,30 @@ export default function Home() {
       {/* ──── FEATURED PROJECT ──── */}
       <section className="bg-section-alt">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
-          <p className="text-accent font-medium text-sm tracking-widest uppercase mb-3 text-center">
-            Featured Project
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Project Image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl card-hover">
+            <Link href="/featuredproject" className="group relative rounded-2xl overflow-hidden shadow-xl card-hover block aspect-video">
               <Image
-                src="/images/project-placeholder.svg"
-                alt="A scenario-based e-learning experience"
-                width={800}
-                height={500}
-                className="w-full h-auto"
+                src="/articulate/story_content/thumbnail.jpg"
+                alt="Gray Areas – Navigating Workplace Conduct"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.2]"
               />
-            </div>
+              <div className="absolute inset-0 bg-accent/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <span className="text-white font-semibold text-lg flex items-center gap-2">
+                  View Project
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </span>
+              </div>
+            </Link>
 
             {/* Project Info */}
             <div className="space-y-6">
+              <p className="text-accent font-medium text-sm tracking-widest uppercase">
+                Featured Project
+              </p>
               <h2 className="text-3xl md:text-4xl font-serif font-bold leading-snug">
                 A scenario-based
                 <br />
@@ -122,23 +129,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ──── TESTIMONIALS ──── */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16">
-            What People Are{" "}
-            <span className="scribble-underline">Saying</span>
-          </h2>
-          <TestimonialCarousel />
-        </div>
-      </section>
-
       {/* ──── ABOUT ME ──── */}
       <section className="bg-section-alt">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-2xl">
             {/* About Copy */}
-            <div className="space-y-6 order-2 md:order-1">
+            <div className="space-y-6">
               <p className="text-accent font-medium text-sm tracking-widest uppercase">
                 A Little About Me
               </p>
@@ -153,7 +149,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-white transition-all"
               >
                 Read On
                 <svg
@@ -172,18 +168,6 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* About Image */}
-            <div className="relative order-1 md:order-2">
-              <div className="relative w-full aspect-[5/6] rounded-3xl overflow-hidden shadow-xl">
-                <Image
-                  src="/images/about-placeholder.svg"
-                  alt="About Jelainy"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute -z-10 -bottom-8 -left-8 w-48 h-48 bg-accent-light rounded-full blur-3xl opacity-50" />
-            </div>
           </div>
         </div>
       </section>

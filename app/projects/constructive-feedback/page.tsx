@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ArticulateEmbed from "../../components/ArticulateEmbed";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -34,16 +34,10 @@ export default function ConstructiveFeedbackPage() {
       {/* ──── PROJECT IMAGE ──── */}
       <section className="bg-section-alt">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/project-placeholder.svg"
-              alt="Constructive Feedback Microlearning Project"
-              width={1200}
-              height={600}
-              className="w-full h-auto"
-              priority
-            />
-          </div>
+          <ArticulateEmbed
+            src="/articulate/constructivefeedback/index.html"
+            title="Constructive Feedback Microlearning"
+          />
         </div>
       </section>
 
@@ -106,7 +100,7 @@ export default function ConstructiveFeedbackPage() {
                 <h2 className="text-2xl md:text-3xl font-serif font-bold">
                   My Process
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-4">
                   {[
                     {
                       step: "01",
@@ -133,10 +127,10 @@ export default function ConstructiveFeedbackPage() {
                       key={item.step}
                       className="bg-section-alt rounded-xl p-6 space-y-3"
                     >
-                      <span className="text-3xl font-serif font-bold text-accent/30">
-                        {item.step}
-                      </span>
-                      <h3 className="font-serif font-bold">{item.title}</h3>
+                      <div className="flex items-baseline gap-3 mb-2">
+                        <span className="text-2xl font-serif font-bold text-accent/30">{item.step}</span>
+                        <h3 className="font-serif font-bold">{item.title}</h3>
+                      </div>
                       <p className="text-muted text-sm leading-relaxed">
                         {item.desc}
                       </p>

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import ImageLightbox from "../../components/ImageLightbox";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -33,18 +33,27 @@ export default function ApexNeedsAnalysisPage() {
         </div>
       </section>
 
-      {/* ──── PROJECT IMAGE ──── */}
+      {/* ──── PROJECT IMAGES ──── */}
       <section className="bg-section-alt">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <Image
-              src="/images/project-placeholder.svg"
-              alt="APEX Needs Analysis Project"
-              width={1200}
-              height={600}
-              className="w-full h-auto"
-              priority
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <ImageLightbox
+                src="/articulate/apex/1.png"
+                alt="APEX Needs Analysis – Page 1"
+                width={1545}
+                height={2000}
+                priority
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <ImageLightbox
+                src="/articulate/apex/2.png"
+                alt="APEX Needs Analysis – Page 2"
+                width={1545}
+                height={1999}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -124,7 +133,7 @@ export default function ApexNeedsAnalysisPage() {
                 <h2 className="text-2xl md:text-3xl font-serif font-bold">
                   My Process
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-4">
                   {[
                     {
                       step: "01",
@@ -151,10 +160,10 @@ export default function ApexNeedsAnalysisPage() {
                       key={item.step}
                       className="bg-section-alt rounded-xl p-6 space-y-3"
                     >
-                      <span className="text-3xl font-serif font-bold text-accent/30">
-                        {item.step}
-                      </span>
-                      <h3 className="font-serif font-bold">{item.title}</h3>
+                      <div className="flex items-baseline gap-3 mb-2">
+                        <span className="text-2xl font-serif font-bold text-accent/30">{item.step}</span>
+                        <h3 className="font-serif font-bold">{item.title}</h3>
+                      </div>
                       <p className="text-muted text-sm leading-relaxed">
                         {item.desc}
                       </p>

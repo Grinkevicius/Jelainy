@@ -24,7 +24,7 @@ export default function Home() {
                 </h1>
               </div>
               <p className="text-lg text-muted leading-relaxed max-w-lg">
-                I design learning experiences that don&apos;t just inform — they
+                I design learning experiences that don&apos;t just inform, they
                 engage, empower, and drive meaningful results.
               </p>
               <Link

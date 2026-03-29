@@ -20,10 +20,10 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/jelayny_text_only.png"
+            src="/image2.png"
             alt="Jelainy"
-            height={48}
-            width={160}
+            height={64}
+            width={210}
             className="object-contain"
             priority
           />

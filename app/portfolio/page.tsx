@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -10,51 +9,27 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    title: "Employee Engagement E-Learning",
+    title: "Gray Areas",
     category: "Scenario-Based Learning",
     description:
-      "A scenario-based e-learning experience designed to teach managers how to foster a culture of employee engagement.",
+      "A scenario-based e-learning experience designed to help managers navigate ambiguous workplace conduct concerns and make decisions with real consequences.",
     href: "/featuredproject",
     color: "bg-accent-light",
   },
   {
-    title: "Onboarding Program Redesign",
-    category: "Curriculum Design",
+    title: "Constructive Feedback",
+    category: "Microlearning",
     description:
-      "A complete overhaul of the new-hire onboarding program, incorporating microlearning, social learning, and self-paced modules.",
-    href: "/portfolio",
+      "A microlearning experience introducing a simple 3-step framework for delivering clear, actionable, and supportive feedback.",
+    href: "/projects/constructive-feedback",
     color: "bg-teal-light",
   },
   {
-    title: "Compliance Training Suite",
-    category: "E-Learning Development",
+    title: "APEX Needs Analysis",
+    category: "Performance Consulting",
     description:
-      "Interactive compliance training modules covering workplace safety, data privacy, and ethics — built for accessibility.",
-    href: "/portfolio",
-    color: "bg-blue-light",
-  },
-  {
-    title: "Leadership Development Workshop",
-    category: "Blended Learning",
-    description:
-      "A blended learning program combining instructor-led sessions with self-paced digital activities for emerging leaders.",
-    href: "/portfolio",
-    color: "bg-accent-light",
-  },
-  {
-    title: "Product Knowledge Hub",
-    category: "Performance Support",
-    description:
-      "A searchable, on-demand learning hub to help sales teams stay up-to-date on product features and competitive positioning.",
-    href: "/portfolio",
-    color: "bg-teal-light",
-  },
-  {
-    title: "DEI Awareness Module",
-    category: "Scenario-Based Learning",
-    description:
-      "An empathy-driven, scenario-based module to build awareness of diversity, equity, and inclusion in the workplace.",
-    href: "/portfolio",
+      "A performance consulting project identifying root causes of service inconsistencies and recommending targeted, non-training solutions.",
+    href: "/projects/apex-needs-analysis",
     color: "bg-blue-light",
   },
 ];

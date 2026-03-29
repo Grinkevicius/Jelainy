@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Featured Project | Jelainy",
+  title: "Gray Areas | Jelainy",
   description:
-    "A deep dive into a scenario-based e-learning experience designed to bolster employee engagement.",
+    "A scenario-based e-learning experience designed to help managers navigate ambiguous workplace conduct concerns.",
 };
 
 export default function FeaturedProjectPage() {
@@ -19,16 +19,16 @@ export default function FeaturedProjectPage() {
               Featured Project
             </p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight animate-fade-in-up">
-              A scenario-based{" "}
               <span className="scribble-underline text-accent">
-                e-learning experience
+                Gray Areas:
               </span>{" "}
-              designed to bolster employee engagement
+              A Manager&apos;s Guide to Navigating Workplace Conduct Concerns
             </h1>
             <p className="mt-6 text-lg text-muted leading-relaxed animate-fade-in-up animation-delay-200">
-              This concept project was created to teach managers how to foster a
-              culture of employee engagement and value positively through
-              real-world scenarios and interactive decision points.
+              A scenario-based e-learning experience designed to help managers
+              navigate ambiguous workplace conduct concerns. Using real-world
+              situations, learners explore how small decisions can shape team
+              culture, trust, and compliance outcomes.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function FeaturedProjectPage() {
           <div className="rounded-2xl overflow-hidden shadow-xl">
             <Image
               src="/images/project-placeholder.svg"
-              alt="Employee Engagement E-Learning Project"
+              alt="Gray Areas E-Learning Project"
               width={1200}
               height={600}
               className="w-full h-auto"
@@ -50,58 +50,121 @@ export default function FeaturedProjectPage() {
         </div>
       </section>
 
-      {/* ──── OVERVIEW ──── */}
+      {/* ──── CONTENT ──── */}
       <section className="py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/* Sidebar details */}
+
+            {/* Sidebar */}
             <div className="space-y-8 md:col-span-1">
-              {[
-                { label: "Role", value: "Learning Experience Designer" },
-                { label: "Timeline", value: "6 weeks" },
-                {
-                  label: "Tools",
-                  value: "Articulate Storyline, Figma, Miro",
-                },
-                { label: "Type", value: "Concept Project" },
-              ].map((item) => (
-                <div key={item.label}>
-                  <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">
-                    {item.label}
-                  </p>
-                  <p className="text-foreground font-medium">{item.value}</p>
-                </div>
-              ))}
+              <div>
+                <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">
+                  Responsibilities
+                </p>
+                <ul className="space-y-1">
+                  {[
+                    "Instructional Design",
+                    "eLearning Development",
+                    "Visual Design",
+                    "Prototype Creation",
+                  ].map((r) => (
+                    <li key={r} className="text-foreground font-medium text-sm">
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">
+                  Tools Used
+                </p>
+                <ul className="space-y-1">
+                  {[
+                    "Storyline 360",
+                    "MindMeister",
+                    "Canva",
+                    "Microsoft Suite",
+                  ].map((t) => (
+                    <li key={t} className="text-foreground font-medium text-sm">
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-1">
+                  Type
+                </p>
+                <p className="text-foreground font-medium">Concept Project</p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-2">
+                  Audience
+                </p>
+                <p className="text-muted text-sm leading-relaxed">
+                  New and mid-level marketing managers responsible for responding
+                  to employee concerns who may lack confidence handling situations
+                  that require judgment, discretion, and balanced decision-making.
+                </p>
+              </div>
             </div>
 
             {/* Main content */}
             <div className="md:col-span-2 space-y-12">
+
               {/* The Problem */}
               <div className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-serif font-bold">
                   The Problem
                 </h2>
                 <p className="text-muted leading-relaxed">
-                  Research shows that disengaged employees cost organizations
-                  billions in lost productivity each year. Many managers lack the
-                  skills and awareness needed to create an environment where
-                  employees feel valued, heard, and motivated. Traditional
-                  compliance-style training wasn&apos;t moving the needle.
+                  At Northbridge Marketing Group, a fictitious marketing
+                  corporation, managers are responsible for leading collaborative
+                  teams in a fast-paced, high-visibility environment. In these
+                  settings, workplace conduct concerns can arise during everyday
+                  interactions.
+                </p>
+                <p className="text-muted leading-relaxed">
+                  These situations are not always clearly defined as policy
+                  violations, making them difficult for managers to address. As a
+                  result, managers may incorrectly handle these issues, increasing
+                  the risk to the organization and impacting team performance.
+                  Despite this, many training courses focus primarily on policy
+                  awareness rather than preparing managers to navigate these
+                  tricky, real-world situations.
                 </p>
               </div>
 
-              {/* The Solution */}
+              {/* Solution */}
               <div className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-serif font-bold">
-                  The Solution
+                  Solution
                 </h2>
                 <p className="text-muted leading-relaxed">
-                  I designed a scenario-based e-learning module that puts
-                  managers in realistic workplace situations. Learners make
-                  decisions at critical moments and see the consequences of their
-                  choices play out — building empathy, self-awareness, and
-                  practical engagement skills.
+                  To solve the problem, I designed a scenario-based e-learning
+                  experience that allows managers to practice responding to
+                  workplace conduct concerns in a realistic, low-risk environment.
                 </p>
+                <p className="text-muted leading-relaxed">
+                  I determined that scenario-based e-learning was the best
+                  solution because:
+                </p>
+                <ul className="space-y-3">
+                  {[
+                    "The learner must make decisions and observe direct consequences of their actions",
+                    "Each decision reflects different situations that managers may encounter in their positions",
+                    "The learning experience is easily scalable and can be completed in various work environments (in-person, hybrid, remote)",
+                    "Learners may revisit the material, and the material can be adapted to different departments and management levels, making it a cost-effective solution",
+                    "In a real-world implementation, this experience could be further supported by follow-up resources or manager coaching to reinforce behavior change over time",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="mt-1.5 w-2 h-2 rounded-full bg-accent shrink-0" />
+                      <span className="text-muted leading-relaxed text-sm">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Process */}
@@ -109,27 +172,32 @@ export default function FeaturedProjectPage() {
                 <h2 className="text-2xl md:text-3xl font-serif font-bold">
                   My Process
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-4">
                   {[
                     {
                       step: "01",
-                      title: "Research & Analysis",
-                      desc: "Reviewed engagement literature, conducted SME interviews, and identified key learning objectives.",
+                      title: "Action Mapping",
+                      desc: "I began by identifying the core performance problem and mapping out realistic workplace scenarios where managers must make decisions. I then explored the potential consequences, focusing on their impact on psychological safety, organizational risk, and team dynamics. From there, I identified the key behaviors that managers need to practice, ensuring that each interaction reinforces effective decision-making in ambiguous, real-world situations.",
                     },
                     {
                       step: "02",
-                      title: "Storyboarding",
-                      desc: "Mapped branching scenarios with multiple decision paths and consequence screens using Miro.",
+                      title: "Text-Based Storyboard",
+                      desc: 'After identifying the key decision points, I created a detailed storyboard to map out the learner experience. I wrote each scenario using natural, conversational dialogue to reflect realistic workplace interactions. At each decision point, learners choose how to respond and experience the consequences as the scenario unfolds. I also incorporated a "Manager Toolkit" that provides optional guidance, allowing learners to access support as needed while still encouraging independent decision-making.',
                     },
                     {
                       step: "03",
-                      title: "Visual Design",
-                      desc: "Created a warm, approachable visual style in Figma with illustrated characters and clean UI.",
+                      title: "Visual Mockups",
+                      desc: "Using Canva, I developed the overall layout, style guide, and background mockups to establish a cohesive visual direction. I then implemented the interface in Articulate Storyline with a custom layout that feels more like a workplace environment than a traditional eLearning course — including a manager dashboard, progress indicators, and a persistent Manager Toolkit.",
                     },
                     {
                       step: "04",
+                      title: "Prototyping",
+                      desc: "I developed an interactive prototype to test the flow, functionality, and overall user experience — building core interactions including branching decision points, variable-driven progress indicators, and layered feedback. Throughout prototyping, I tested the experience to refine navigation, improve pacing, and ensure a smooth and intuitive user experience.",
+                    },
+                    {
+                      step: "05",
                       title: "Development",
-                      desc: "Built the interactive module in Articulate Storyline with branching logic, audio narration, and assessments.",
+                      desc: "After incorporating feedback from the interactive prototype, I moved into full development in Articulate Storyline. I refined the interactions, finalized visual elements, and ensured all variables, triggers, and branching logic functioned as intended — polishing transitions and pacing to create a seamless and engaging learner experience.",
                     },
                   ].map((item) => (
                     <div
@@ -151,25 +219,55 @@ export default function FeaturedProjectPage() {
               {/* Results */}
               <div className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-serif font-bold">
-                  Results & Takeaways
+                  Results
                 </h2>
                 <p className="text-muted leading-relaxed">
-                  While this was a concept project, it was designed to be
-                  portfolio-ready and production-viable. Key outcomes include:
+                  This project demonstrates my ability to apply the ADDIE model
+                  to design a performance-focused learning experience from
+                  analysis through evaluation. By grounding the experience in
+                  real-world decision-making, I was able to move beyond
+                  knowledge-based training and focus on observable behaviors.
                 </p>
-                <ul className="space-y-3">
-                  {[
-                    "Realistic branching scenarios that mirror actual workplace situations",
-                    "Reflective assessment moments that encourage self-evaluation",
-                    "Accessible design following WCAG 2.1 AA guidelines",
-                    "Positive peer feedback on narrative quality and visual design",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <span className="mt-1.5 w-2 h-2 rounded-full bg-accent shrink-0" />
-                      <span className="text-muted leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-muted leading-relaxed">
+                  The design supports multiple levels of the Kirkpatrick Model.
+                  At Level 1 (Reaction), the immersive format is intended to
+                  increase engagement and relevance. At Level 2 (Learning),
+                  learners practice decision-making and receive immediate
+                  feedback. At Level 3 (Behavior), the Manager Toolkit mirrors
+                  on-the-job performance support to bridge the gap between
+                  learning and real-world application.
+                </p>
+                <p className="text-muted leading-relaxed">
+                  If implemented in a real-world setting, this solution could be
+                  evaluated using learner decision patterns, completion rates,
+                  time spent on key interactions, and follow-up assessments to
+                  measure behavior change over time.
+                </p>
+              </div>
+
+              {/* Takeaways */}
+              <div className="space-y-4">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold">
+                  Takeaways
+                </h2>
+                <p className="text-muted leading-relaxed">
+                  Managing this project end-to-end strengthened both my
+                  instructional design and e-learning development skills. Working
+                  through each phase of ADDIE reinforced the importance of
+                  thoughtful planning, iterative design, and continuous
+                  refinement throughout the process.
+                </p>
+                <p className="text-muted leading-relaxed">
+                  One key takeaway was the value of designing for performance
+                  rather than information. By focusing on real-world decisions and
+                  consequences, I was able to create a more meaningful and
+                  engaging experience that better reflects the complexity of
+                  workplace situations. Creating a cohesive interface — including
+                  custom layouts, progress indicators, and a persistent Manager
+                  Toolkit — required careful attention to detail and reinforced
+                  the importance of investing time in the analysis and design
+                  phases.
+                </p>
               </div>
             </div>
           </div>

@@ -30,7 +30,6 @@ export async function POST(request: Request) {
           <tr>
             <td style="background:linear-gradient(135deg,#4a8fe7,#7b6fc4);border-radius:12px 12px 0 0;padding:20px 28px;">
               <p style="margin:0;color:rgba(255,255,255,0.9);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:700;">New Contact Request</p>
-              <p style="margin:4px 0 0;color:rgba(255,255,255,0.65);font-size:12px;">jelainy.com</p>
             </td>
           </tr>
 

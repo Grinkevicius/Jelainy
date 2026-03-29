@@ -8,7 +8,7 @@ export default function Home() {
       {/* ──── HERO SECTION ──── */}
       <section className="relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_0.65fr] gap-12 items-center">
             {/* Left – Copy */}
             <div className="space-y-8 animate-fade-in-up">
               <div>
@@ -68,13 +68,13 @@ export default function Home() {
 
       {/* ──── FEATURED PROJECT ──── */}
       <section className="bg-section-alt">
-        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 pt-20 pb-10 md:pt-28 md:pb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Project Image */}
-            <Link href="/featuredproject" className="group relative rounded-2xl overflow-hidden shadow-xl card-hover block aspect-video">
+            <Link href="/featuredproject" className="group relative rounded-2xl overflow-hidden shadow-xl card-hover block w-full aspect-video">
               <Image
-                src="/articulate/story_content/thumbnail.jpg"
-                alt="Gray Areas – Navigating Workplace Conduct"
+                src="/articulate/grayareas/story_content/thumbnail.jpg"
+                alt="Navigating Workplace Conduct"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.2]"
               />
@@ -94,14 +94,14 @@ export default function Home() {
                 Featured Project
               </p>
               <h2 className="text-3xl md:text-4xl font-serif font-bold leading-snug">
-                A scenario-based
+                A scenario based
                 <br />
                 <span className="text-accent">eLearning experience</span>{" "}
                 designed to help managers handle workplace conduct issues
                 effectively
               </h2>
               <p className="text-muted leading-relaxed">
-                Using real-world scenarios, interactive decisions, and
+                Using real world scenarios, interactive decisions, and
                 reflection, this project focuses on building a culture of
                 respect while protecting the organization.
               </p>
@@ -131,7 +131,7 @@ export default function Home() {
 
       {/* ──── ABOUT ME ──── */}
       <section className="bg-section-alt">
-        <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 pt-10 pb-20 md:pt-12 md:pb-28">
           <div className="max-w-2xl">
             {/* About Copy */}
             <div className="space-y-6">
@@ -139,13 +139,12 @@ export default function Home() {
                 A Little About Me
               </p>
               <h2 className="text-3xl md:text-4xl font-serif font-bold leading-snug">
-                Lifelong learner, dreamer, and problem-solver.
+                Curious, creative, and always looking for ways to learn and grow.
               </h2>
               <p className="text-muted leading-relaxed">
-                Hi, I&apos;m Jelainy, a lifelong learner, dreamer, and
-                problem-solver. I&apos;ve spent years honing my skills in
-                analysis, design, development, instruction, evaluation, and
-                presentation — all to facilitate growth.
+                Hi, I&apos;m Jelainy. I design learning experiences with a
+                creative, performance driven mindset, creating solutions that
+                engage learners and drive real world results.
               </p>
               <Link
                 href="/about"
@@ -175,22 +174,9 @@ export default function Home() {
       {/* ──── CTA SECTION ──── */}
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 text-center space-y-8">
-          {/* Decorative scribble */}
-          <svg
-            className="mx-auto w-48 h-6 text-accent opacity-50"
-            viewBox="0 0 200 12"
-            fill="none"
-          >
-            <path
-              d="M2 8 Q 50 2, 100 8 T 198 8"
-              stroke="currentColor"
-              strokeWidth="3"
-              strokeLinecap="round"
-            />
-          </svg>
           <h2 className="text-3xl md:text-5xl font-serif font-bold leading-tight">
             Let&apos;s make meaningful learning experiences{" "}
-            <span className="text-accent">together</span>.
+            <span className="scribble-underline text-accent">together</span>.
           </h2>
           <Link
             href="/contact"

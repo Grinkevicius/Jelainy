@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    title: "Gray Areas",
+    title: "Navigating Workplace Conduct",
     category: "Scenario-Based Learning",
     description:
       "A scenario-based e-learning experience designed to help managers navigate ambiguous workplace conduct concerns and make decisions with real consequences.",

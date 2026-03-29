@@ -4,7 +4,7 @@ import ImageLightbox from "../components/ImageLightbox";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gray Areas | Jelainy",
+  title: "Navigating Workplace Conduct | Jelainy",
   description:
     "A scenario-based e-learning experience designed to help managers navigate ambiguous workplace conduct concerns.",
 };
@@ -21,9 +21,9 @@ export default function FeaturedProjectPage() {
             </p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight animate-fade-in-up">
               <span className="scribble-underline text-accent">
-                Gray Areas:
+                Navigating
               </span>{" "}
-              A Manager&apos;s Guide to Navigating Workplace Conduct Concerns
+              Workplace Conduct
             </h1>
             <p className="mt-6 text-lg text-muted leading-relaxed animate-fade-in-up animation-delay-200">
               A scenario-based e-learning experience designed to help managers
@@ -40,7 +40,7 @@ export default function FeaturedProjectPage() {
         <div className="max-w-6xl mx-auto px-6 py-16">
           <ArticulateEmbed
             src="/articulate/grayareas/story.html"
-            title="Gray Areas – Navigating Workplace Conduct"
+            title="Navigating Workplace Conduct"
           />
         </div>
       </section>

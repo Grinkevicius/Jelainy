@@ -3,7 +3,7 @@ import ArticulateEmbed from "../../components/ArticulateEmbed";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Constructive Feedback | Jelainy",
+  title: "How To Give Constructive Feedback | Jelainy",
   description:
     "A microlearning experience helping managers build a practical, repeatable skill: delivering clear and constructive feedback.",
 };
@@ -19,11 +19,11 @@ export default function ConstructiveFeedbackPage() {
               Portfolio Project
             </p>
             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight animate-fade-in-up">
-              <span className="scribble-underline text-accent">Constructive</span>{" "}
-              Feedback
+              How To Give{" "}
+              <span className="scribble-underline text-accent">Constructive Feedback</span>
             </h1>
             <p className="mt-6 text-lg text-muted leading-relaxed animate-fade-in-up animation-delay-200">
-              Using an ADDIE-informed approach, this project focuses on helping
+              Using an ADDIE informed approach, this project focuses on helping
               managers build a practical, repeatable skill: delivering clear and
               constructive feedback.
             </p>
@@ -50,7 +50,7 @@ export default function ConstructiveFeedbackPage() {
             <div className="space-y-8 md:col-span-1">
               {[
                 { label: "Role", value: "Learning Experience Designer" },
-                { label: "Timeline", value: "1–2 Days" },
+                { label: "Timeline", value: "1 to 2 Days" },
                 { label: "Tools", value: "Articulate Rise 360" },
                 { label: "Type", value: "Microlearning Concept Project" },
               ].map((item) => (
@@ -77,7 +77,7 @@ export default function ConstructiveFeedbackPage() {
                   vague, overly critical, or avoided altogether, leading to
                   confusion, disengagement, and missed opportunities for employee
                   growth. Traditional training approaches often fail to provide
-                  practical, in-the-moment guidance for these conversations.
+                  practical, in the moment guidance for these conversations.
                 </p>
               </div>
 
@@ -88,10 +88,10 @@ export default function ConstructiveFeedbackPage() {
                 </h2>
                 <p className="text-muted leading-relaxed">
                   I designed a quick microlearning experience that introduces a
-                  simple 3-step framework for delivering effective feedback. The
-                  module focuses on real-world application, allowing learners to
+                  simple 3 step framework for delivering effective feedback. The
+                  module focuses on real world application, allowing learners to
                   practice identifying and delivering feedback through short,
-                  scenario-based interactions.
+                  scenario based interactions.
                 </p>
               </div>
 
@@ -110,7 +110,7 @@ export default function ConstructiveFeedbackPage() {
                     {
                       step: "02",
                       title: "Design",
-                      desc: "Structured the experience as a short, mobile-friendly module built around a 3-step feedback framework. Incorporated realistic scenarios to support decision-making and reinforce application.",
+                      desc: "Structured the experience as a short, mobile friendly module built around a 3 step feedback framework. Incorporated realistic scenarios to support decision making and reinforce application.",
                     },
                     {
                       step: "03",
@@ -120,7 +120,7 @@ export default function ConstructiveFeedbackPage() {
                     {
                       step: "04",
                       title: "Evaluation",
-                      desc: "Designed with real-world application in mind, including knowledge checks and reflection prompts. Effectiveness could be measured through improvements in feedback quality, employee engagement, and manager performance.",
+                      desc: "Designed with real world application in mind, including knowledge checks and reflection prompts. Effectiveness could be measured through improvements in feedback quality, employee engagement, and manager performance.",
                     },
                   ].map((item) => (
                     <div
@@ -150,10 +150,10 @@ export default function ConstructiveFeedbackPage() {
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "A clear, easy-to-apply 3-step feedback framework",
-                    "Scenario-based practice that reinforces real-world application",
-                    "A concise, mobile-friendly design optimized for just-in-time learning",
-                    "Strengthened ability to design efficient, performance-focused microlearning experiences",
+                    "A clear, easy to apply 3 step feedback framework",
+                    "Scenario based practice that reinforces real world application",
+                    "A concise, mobile friendly design optimized for just in time learning",
+                    "Strengthened ability to design efficient, performance focused microlearning experiences",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <span className="mt-1.5 w-2 h-2 rounded-full bg-accent shrink-0" />
@@ -171,10 +171,10 @@ export default function ConstructiveFeedbackPage() {
                 <p className="text-muted leading-relaxed">
                   It also pushed me to think carefully about how to translate a
                   complex interpersonal skill into a clear, repeatable framework
-                  that learners could quickly understand and apply — balancing the
+                  that learners could quickly understand and apply, balancing the
                   time needed to complete the experience with the value it
                   provided. Additionally, this project further emphasized my
-                  belief of designing for real-world performance rather than just
+                  belief of designing for real world performance rather than just
                   for knowledge, using scenarios and examples to provide learners
                   with ways to implement the learning immediately.
                 </p>
@@ -188,7 +188,7 @@ export default function ConstructiveFeedbackPage() {
       <section className="bg-section-alt">
         <div className="max-w-3xl mx-auto px-6 py-20 md:py-28 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
-            Want to see more <span className="text-accent">projects</span>?
+            Want to see more <span className="scribble-underline text-accent">projects</span>?
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

@@ -1,36 +1,37 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Portfolio | Jelainy",
   description:
-    "Explore Jelainy's portfolio of learning experience design projects — from e-learning modules to curriculum design.",
+    "Explore Jelainy's portfolio of learning experience design projects, from eLearning modules to curriculum design.",
 };
 
 const projects = [
   {
     title: "Navigating Workplace Conduct",
-    category: "Scenario-Based Learning",
+    category: "Scenario Based Learning",
     description:
-      "A scenario-based e-learning experience designed to help managers navigate ambiguous workplace conduct concerns and make decisions with real consequences.",
+      "A scenario based eLearning experience designed to help managers navigate ambiguous workplace conduct concerns and make decisions with real consequences.",
     href: "/featuredproject",
-    color: "bg-accent-light",
+    image: "/articulate/grayareas/story_content/thumbnail.jpg",
   },
   {
-    title: "Constructive Feedback",
+    title: "How To Give Constructive Feedback ",
     category: "Microlearning",
     description:
       "A microlearning experience introducing a simple 3-step framework for delivering clear, actionable, and supportive feedback.",
     href: "/projects/constructive-feedback",
-    color: "bg-teal-light",
+    image: "/articulate/constructivefeedback/assets/stock-image-1.jpg",
   },
   {
     title: "APEX Needs Analysis",
     category: "Performance Consulting",
     description:
-      "A performance consulting project identifying root causes of service inconsistencies and recommending targeted, non-training solutions.",
+      "A performance consulting project identifying root causes of service inconsistencies and recommending targeted, non training solutions.",
     href: "/projects/apex-needs-analysis",
-    color: "bg-blue-light",
+    image: "/articulate/apex/1.png",
   },
 ];
 
@@ -66,13 +67,17 @@ export default function PortfolioPage() {
                 href={project.href}
                 className="group bg-card-bg rounded-2xl overflow-hidden shadow-sm card-hover flex flex-col"
               >
-                {/* Colored header area */}
-                <div
-                  className={`${project.color} h-48 flex items-center justify-center`}
-                >
-                  <span className="text-accent font-serif font-bold text-lg opacity-60 group-hover:opacity-100 transition-opacity">
-                    {project.category}
-                  </span>
+                {/* Image header */}
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                  />
+                  <div className="absolute inset-0 bg-accent/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="text-white font-semibold text-sm">View Project</span>
+                  </div>
                 </div>
 
                 {/* Content */}
@@ -113,7 +118,7 @@ export default function PortfolioPage() {
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
-            Have a project in <span className="text-accent">mind</span>?
+            Have a project in <span className="scribble-underline text-accent">mind</span>?
           </h2>
           <p className="text-muted leading-relaxed">
             I&apos;d love to hear about it. Let&apos;s connect and explore how we

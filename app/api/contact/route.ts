@@ -65,7 +65,7 @@ export async function POST(request: Request) {
           <!-- Footer -->
           <tr>
             <td style="padding:16px 4px 0;text-align:center;">
-              <p style="margin:0;font-size:11px;color:#9ca3af;">jelainy.com &nbsp;·&nbsp; made by <a href="https://grinkt.com" style="color:#9ca3af;text-decoration:underline;">grinkt.com</a></p>
+              <p style="margin:0;font-size:11px;color:#9ca3af;">jelainy.com</p>
             </td>
           </tr>
 
